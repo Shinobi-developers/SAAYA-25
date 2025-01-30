@@ -4,6 +4,7 @@ import saayaAnimation from "../../../public/images/saaya 1-4.gif";
 import Tv from "../../../public/images/TV.png";
 import Counter from "../../components/EventCounter"
 import Marquee from "../../components/Marquee"
+import AboutSaaya from "../../components/AboutSaaya";
 
 const Home = () => {
   return (
@@ -27,7 +28,10 @@ const Home = () => {
       <Counter />
     </div>
     </div>
-    <div className="">
+    <div className="flex justify-center bg-amber-300 p-5 md:p-10">
+      <AboutSaaya />
+    </div>
+    <div className="py-1">
     <Marquee direction="right" /> 
     <Marquee direction="left" />
     </div>
