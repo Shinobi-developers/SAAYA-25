@@ -32,44 +32,183 @@ const Events = () => {
     ],
     "Off Stage": [
       {
-        name: "Painting",
-        date: "March 10, 2025",
-        time: "10:00 AM",
-        venue: "Art Room",
+          name: "Story Writing English",
+          date: "January 30, 2025",
+          time: "1:30 PM - 2:00 PM",
+          venue: "Seminar Hall"
       },
       {
-        name: "Photography",
-        date: "March 11, 2025",
-        time: "11:30 AM",
-        venue: "Photo Studio",
+          name: "Story Writing Hindi",
+          date: "January 30, 2025",
+          time: "2:00 PM - 2:30 PM",
+          venue: "Seminar Hall"
       },
       {
-        name: "Poetry Slam",
-        date: "March 12, 2025",
-        time: "2:00 PM",
-        venue: "Library Hall",
-      },
-    ],
-    "Second Stage": [
-      {
-        name: "Debate",
-        date: "March 10, 2025",
-        time: "3:00 PM",
-        venue: "Conference Room",
+          name: "Story Writing Malayalam",
+          date: "January 30, 2025",
+          time: "2:30 PM - 3:00 PM",
+          venue: "Seminar Hall"
       },
       {
-        name: "Quiz",
-        date: "March 11, 2025",
-        time: "4:00 PM",
-        venue: "Lecture Hall 2",
+          name: "Cartoon",
+          date: "January 30, 2025",
+          time: "3:00 PM - 3:30 PM",
+          venue: "Seminar Hall"
       },
       {
-        name: "Stand-up Comedy",
-        date: "March 12, 2025",
-        time: "8:00 PM",
-        venue: "Cafeteria Stage",
+          name: "Pencil Drawing",
+          date: "January 30, 2025",
+          time: "3:30 PM - 4:00 PM",
+          venue: "Seminar Hall"
       },
-    ],
+      {
+          name: "Poem Writing English",
+          date: "January 31, 2025",
+          time: "9:30 AM - 10:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Poem Writing Malayalam",
+          date: "January 31, 2025",
+          time: "10:00 AM - 10:30 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Poem Writing Hindi",
+          date: "January 31, 2025",
+          time: "10:30 AM - 11:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Essay Writing English",
+          date: "January 31, 2025",
+          time: "11:00 AM - 11:30 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Essay Writing Malayalam",
+          date: "January 31, 2025",
+          time: "11:30 AM - 12:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Essay Writing Hindi",
+          date: "January 31, 2025",
+          time: "12:00 PM - 12:30 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Spot Photography",
+          date: "January 31, 2025",
+          time: "12:30 PM - 2:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Debate",
+          date: "January 31, 2025",
+          time: "3:00 PM - 4:00 PM",
+          venue: "Seminar Hall"
+      }
+  ],
+    "Pre Stage Event": [
+      {
+          name: "Elocution Malayalam",
+          date: "January 31, 2025",
+          time: "2:00 PM - 2:30 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Elocution English",
+          date: "January 31, 2025",
+          time: "2:30 PM - 3:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Classical Music",
+          date: "February 3, 2025",
+          time: "9:30 AM - 10:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Light Music",
+          date: "February 3, 2025",
+          time: "10:00 AM - 10:30 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Poem Recitation English",
+          date: "February 3, 2025",
+          time: "10:30 AM - 11:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Poem Recitation Malayalam",
+          date: "February 3, 2025",
+          time: "10:30 AM - 11:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Poem Recitation Hindi",
+          date: "February 3, 2025",
+          time: "10:30 AM - 11:00 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Mappila Pattu",
+          date: "February 3, 2025",
+          time: "11:30 AM - 12:15 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Group Song Western",
+          date: "February 3, 2025",
+          time: "1:30 PM - 2:30 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Nadan Pattu",
+          date: "February 3, 2025",
+          time: "2:30 PM - 3:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Rap (English, Malayalam)",
+          date: "February 3, 2025",
+          time: "3:00 PM - 3:30 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Patriotic Song",
+          date: "February 3, 2025",
+          time: "3:30 PM - 4:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Instruments",
+          date: "February 4, 2025",
+          time: "9:30 AM - 10:30 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Mehandi",
+          date: "February 4, 2025",
+          time: "10:30 AM - 11:30 AM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Mono Act",
+          date: "February 4, 2025",
+          time: "11:30 AM - 12:00 PM",
+          venue: "Seminar Hall"
+      },
+      {
+          name: "Mimicry",
+          date: "February 4, 2025",
+          time: "11:30 AM - 12:00 PM",
+          venue: "Seminar Hall"
+      }
+  ]
+  
   };
 
   const [activeCategory, setActiveCategory] = useState<string>("On Stage");
@@ -124,7 +263,7 @@ const Events = () => {
               </p>
               <button
                 onClick={() =>
-                  (window.location.href = "https://your-registration-link.com")
+                  (window.location.href = "https://bit.ly/saayaos")
                 }
                 className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold transition hover:bg-blue-700"
               >
