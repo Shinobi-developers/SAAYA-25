@@ -76,7 +76,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-4 text-center text-gray-400">
-          <p>&copy; 2025 Saaya College Art Fest. All Rights Reserved.</p>
+          <p>&copy; SAAYA'25 AWH Engineering College. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
