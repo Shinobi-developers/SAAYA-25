@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const EventCountdown = () => {
   const eventDate = new Date("2025-02-06T00:00:00").getTime();
@@ -25,7 +25,7 @@ const EventCountdown = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-6 bg-transparent text-white w-full mx-auto">
-      <h2 className="text-xl md:text-4xl font-bold mb-6 text-center">
+      <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center">
         Countdown to Event
       </h2>
       {timeLeft > 0 ? (

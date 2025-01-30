@@ -5,6 +5,7 @@ import Tv from "../../../public/images/TV.png";
 import Counter from "../../components/EventCounter"
 import Marquee from "../../components/Marquee"
 import AboutSaaya from "../../components/AboutSaaya";
+import Leaderboard from "../../components/Leaderboard/index";
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
           <img src={Tv} alt="tv" className="w-1/2 md:w-1/2 lg:w-1/2 h-auto" />
         </div>
       </div>
-      <p className="text-[70px] max-md:text-xl font-bold text-white font-mono">
+      <p className="text-[70px] max-md:text-2xl font-bold text-white font-mono">
         Saaya Arts & Cultural Fest '25 <br />
-        <span className="text-5xl max-md:text-sm">February 06-07</span>
+        <span className="text-5xl max-md:text-lg">February 06-07</span>
       </p>
       <div className="">
       <Counter />
@@ -34,6 +35,9 @@ const Home = () => {
     <div className="py-1">
     <Marquee direction="right" /> 
     <Marquee direction="left" />
+    </div>
+    <div className="w-full">
+      <Leaderboard />
     </div>
     </div>
   );
