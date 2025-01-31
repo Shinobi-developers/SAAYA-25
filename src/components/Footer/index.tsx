@@ -37,8 +37,8 @@ const Footer = () => {
           {/* Contact & Social Media */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
-            <p className="text-gray-400 mb-4">Email: contact@saayafest.com</p>
-            <p className="text-gray-400">Phone: +123-456-7890</p>
+            <p className="text-gray-400 mb-4">Email: 	info@awhengg.org</p>
+            <p className="text-gray-400">Phone: 0495 2358747</p>
 
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-6">
@@ -48,7 +48,7 @@ const Footer = () => {
               <a href="https://twitter.com" className="text-gray-400 hover:text-blue-400">
                 <FaTwitter className="w-6 h-6" />
               </a>
-              <a href="https://instagram.com" className="text-gray-400 hover:text-pink-500">
+              <a href="https://www.instagram.com/saaya_25_?igsh=bXJra291OGV3cWli" className="text-gray-400 hover:text-pink-500">
                 <FaInstagram className="w-6 h-6" />
               </a>
               <a href="https://linkedin.com" className="text-gray-400 hover:text-blue-700">
@@ -65,7 +65,7 @@ const Footer = () => {
             <iframe
               title="Google Map Location"
               className="absolute top-0 left-0 w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.789974279351!2d144.95723681531758!3d-37.81802667975158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5f8e4a2b75%3A0x7044b83b9d03e8ee!2sFederation%20Square!5e0!3m2!1sen!2sin!4v1634576454101!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.0153110184947!2d75.87208197504893!3d11.260283688919408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65b53b70fed51%3A0x56083717be9c111a!2sAWH%20Engineering%20College!5e0!3m2!1sen!2sin!4v1738304106079!5m2!1sen!2sin"
               width="600"
               height="450"
               style={{ border: 0 }}
@@ -76,7 +76,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-4 text-center text-gray-400">
-          <p>&copy; Saaya'25 AWH Engineering College. All Rights Reserved.</p>
+          <p>&copy; Saaya'25 <a href="https://awhengg.org/">AWH Engineering College.</a> All Rights Reserved.</p>
         </div>
       </div>
     </footer>
