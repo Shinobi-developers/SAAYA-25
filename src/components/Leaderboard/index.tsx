@@ -2,11 +2,11 @@ import React from "react";
 import { FaMedal } from "react-icons/fa";
 
 const departmentData = [
-  { name: "Computer Science", points: 950 },
-  { name: "Mechanical Engineering", points: 890 },
-  { name: "Civil Engineering", points: 850 },
-  { name: "Electrical Engineering", points: 800 },
-  { name: "Electronics & Communication", points: 750 },
+  { name: "Computer Science", points: 0 },
+  { name: "Mechanical Engineering", points: 0 },
+  { name: "Civil Engineering", points: 0 },
+  { name: "Electrical Engineering", points: 0 },
+  { name: "Electronics & Communication", points: 0 },
 ];
 
 const getMedalColor = (rank: number) => {
