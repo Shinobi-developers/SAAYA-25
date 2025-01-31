@@ -76,7 +76,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-700 pt-4 text-center text-gray-400">
-          <p>&copy; Saaya'25 <a href="https://awhengg.org/">AWH Engineering College.</a> All Rights Reserved.</p>
+          <p>&copy; Saaya'25 designed & developed by Team Shinobi. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

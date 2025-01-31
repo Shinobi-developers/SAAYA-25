@@ -1,5 +1,4 @@
-import React from "react";
-import { FaMedal } from "react-icons/fa";
+  import { FaMedal } from "react-icons/fa";
 
 const departmentData = [
   { name: "Computer Science", points: 0 },
