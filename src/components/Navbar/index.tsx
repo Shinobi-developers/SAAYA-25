@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../../../public/images/logo.png";
-import Name from "../../../public/images/SAAYA’25.png";
+
+import logo from "../../../public/images/navlogo.svg";
 
 const Navbar = () => {
   // State for toggling mobile menu visibility
@@ -18,7 +19,7 @@ const Navbar = () => {
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src={Logo} className="h-15 max-md:h-10" alt="Logo" />
           <span className="">
-            <img src={Name} className="h-10 max-md:h-5" alt="Name" />
+            <img src={logo} className="h-9 max-md:h-5" alt="Name" />
           </span>
         </a>
 
