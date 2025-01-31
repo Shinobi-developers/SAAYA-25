@@ -6,6 +6,7 @@ import Counter from "../../components/EventCounter"
 import Marquee from "../../components/Marquee"
 import AboutSaaya from "../../components/AboutSaaya";
 import Leaderboard from "../../components/Leaderboard/index";
+import EventSlider from "../../components/EventAccordion";
 
 const Home = () => {
   return (
@@ -38,6 +39,9 @@ const Home = () => {
     </div>
     <div className="w-full">
       <Leaderboard />
+    </div>
+    <div className="w-full">
+      <EventSlider />
     </div>
     </div>
   );
