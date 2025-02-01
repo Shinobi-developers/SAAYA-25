@@ -38,7 +38,7 @@ function Gallery({ items, setIndex, index }: GaleryProps) {
           <motion.div
             whileTap={{ scale: 0.95 }}
             className={`rounded-xl relative ${
-              index === i ? 'w-[250px] md:w-[900px] ' : 'w-[30px] md:w-[100px]'
+              index === i ? 'w-[250px] md:w-[900px] ' : 'w-[25px] md:w-[100px]'
             } h-[400px] flex-shrink-0  transition-[width] ease-in-linear duration-500 origin-center  `}
             key={i}
             onClick={() => {
