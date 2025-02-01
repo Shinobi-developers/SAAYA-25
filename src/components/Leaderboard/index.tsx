@@ -10,10 +10,10 @@ const departmentData = [
 
 const getMedalColor = (rank: number) => {
   switch (rank) {
-    case 1: return "text-yellow-400";  // Gold
-    case 2: return "text-gray-400";   // Silver
-    case 3: return "text-orange-400"; // Bronze
-    default: return "text-gray-600";  // Regular
+    case 1: return "text-yellow-400";
+    case 2: return "text-gray-400";
+    case 3: return "text-orange-400";
+    default: return "text-gray-600";
   }
 };
 
