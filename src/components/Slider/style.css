@@ -1,0 +1,29 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f59e0b !important; /* Amber-500 */
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #d97706 !important; /* Darker Amber */
+}
+
+/* Pagination Bullet Colors */
+.swiper-pagination-bullet {
+    background-color: #f59e0b !important; /* Amber-500 */
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #d97706 !important; /* Darker Amber */
+  }
+  
+  .swiper-pagination-bullet:hover {
+    background-color: #d97706 !important; /* Darker Amber */
+  }
+
+  @media (max-width: 768px) {
+    .swiper-button-prev::after,
+    .swiper-button-next::after{
+      font-size: 24px !important;
+      font-weight: 600;
+    }}
