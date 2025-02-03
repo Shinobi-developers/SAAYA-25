@@ -2,6 +2,8 @@
 import { useNavigate } from "react-router-dom";
 import TextLogo from "../../../public/images/SAAYA TEXT.png";
 import Slider from "../../components/Slider";
+import Timeline from "../../components/Timeline";
+import Marquee from "../../components/Marquee";
 
 const About = () => {
   const navigate = useNavigate();
@@ -84,6 +86,13 @@ const About = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="py-1">
+    <Marquee direction="right" /> 
+    <Marquee direction="left" />
+    </div>
+      <div className="flex justify-center my-0 md:my-20">
+        <Timeline />
       </div>
       {/* <h1 className="text-3xl font-bold">About the Art Fest</h1>
       <p className="mt-4 text-lg">This is our college’s annual art festival showcasing student talent in various forms of art.</p>
