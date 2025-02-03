@@ -9,9 +9,7 @@ import Slide5 from "./images/saayaImg5.jpg";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/swiper-bundle.css";
 
 const images = [
   Slide1,
