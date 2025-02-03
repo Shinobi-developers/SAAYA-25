@@ -39,7 +39,7 @@ const About = () => {
 
   return (
     <div className="">
-      <div className="bg-[url('./images/awh.png')] bg-cover bg-center w-full flex items-center flex-col p-20 text-white ">
+      <div className="bg-[url('../images/awh.png')] bg-cover bg-center w-full flex items-center flex-col p-20 text-white ">
         <img src={TextLogo} alt="" className=" w-10/12 md:w-3/12 " />
         <h1 className="text-2xl max-md:text-lg text-center">
           “Don’t wait for the perfect moment, take the moment and make it
