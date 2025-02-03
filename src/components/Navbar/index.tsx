@@ -71,7 +71,7 @@ const Navbar = () => {
                 Home
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
@@ -84,7 +84,7 @@ const Navbar = () => {
               >
                 About Us
               </NavLink>
-            </li> */}
+            </li>
             <li>
               <NavLink
                 to="/events"
