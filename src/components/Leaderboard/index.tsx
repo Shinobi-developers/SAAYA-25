@@ -1,6 +1,6 @@
-  import { useEffect, useState } from "react";
 import { FaMedal } from "react-icons/fa";
-import axios from "axios";
+//   import { useEffect, useState } from "react";
+// import axios from "axios";
 
 const departmentData = [
   { name: "Gryffindor", branch: "CE & AD", points: 75 },
@@ -19,23 +19,23 @@ const getMedalColor = (rank: number) => {
 };
 
 const Leaderboard = () => {
-  const [score, setScore] = useState([]);
-  const [error, setError] = useState<string | null>(null);
+  // const [score, setScore] = useState([]);
+  // const [error, setError] = useState<string | null>(null);
 
-  const fetchLeaderboard = async () => {
-    try {
-      const response = await axios.get("https://saaya-25-backend.onrender.com/squad/points");
-      setScore(response.data);
-      console.log();
-    } catch (error) {
-      setError("Failed to load leaderboard");
-      console.error(error);
-    }
-  };
-  useEffect(() => {
+  // const fetchLeaderboard = async () => {
+  //   try {
+  //     const response = await axios.get("https://saaya-25-backend.onrender.com/squad/points");
+  //     setScore(response.data);
+  //     console.log();
+  //   } catch (error) {
+  //     setError("Failed to load leaderboard");
+  //     console.error(error);
+  //   }
+  // };
+  // useEffect(() => {
 
-    fetchLeaderboard();
-  }, []);
+  //   fetchLeaderboard();
+  // }, []);
   return (
     <div className="w-full max-w-lg mx-auto bg-white p-10 my-10  md:flex md:flex-col md:items-center">
       <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-4">
