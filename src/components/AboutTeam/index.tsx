@@ -6,91 +6,124 @@ interface Member {
   dept: string;
   semester?: string;
   imageUrl: string;
-  tech?: boolean;
 }
 
 const teamMembers: Member[] = [
-  { name: "Teacher 1", dept: "Computer Science", imageUrl: PlaceholderImg },
+  { name: "MS. APARNA KC", 
+    dept: "Electronics & Communication Engineering", 
+    imageUrl: PlaceholderImg 
+  },
   {
-    name: "Teacher 2",
-    dept: "Electrical Engineering",
+    name: "Mr. NIKHIL K V",
+    dept: "Mechanical Engineering", 
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 1",
+    name: "Athul Raj R ",
     dept: "Computer Science",
-    semester: "3rd",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 2",
+    name: "Sumayya sherin",
+    dept: "Civil Engineering",
+    semester: "8th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Sooraj P M",
+    dept: "Civil Engineering",
+    semester: "8th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Vyshnav m",
+    dept: "Computer Science",
+    semester: "8th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Aman Raza",
+    dept: "Civil Engineering",
+    semester: "8th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Anujith K",
     dept: "Mechanical Engineering",
-    semester: "2nd",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 3",
-    dept: "Electrical Engineering",
-    semester: "1st",
+    name: "Amrithijith k",
+    dept: "Mechanical Engineering",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 4",
-    dept: "Civil Engineering",
-    semester: "4th",
+    name: "Nidhin",
+    dept: "Mechanical Engineering",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 1",
-    dept: "Computer Science",
-    semester: "3rd",
+    name: "Yahya sulaim",
+    dept: "Computer Science & Engineering",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 4",
-    dept: "Civil Engineering",
-    semester: "4th",
+    name: "Sooraj s",
+    dept: "Electrical & Electronics Engineering",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 3",
-    dept: "Electrical Engineering",
-    semester: "1st",
+    name: "Nandu",
+    dept: "Electrical & Electronics Engineering",
+    semester: "8th",
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Student 4",
-    dept: "Civil Engineering",
-    semester: "4th",
+    name: "Anshad",
+    dept: "Electrical & Electronics Engineeringg",
+    semester: "8th",
     imageUrl: PlaceholderImg,
-  },
-  {
-    name: "Student 3",
-    dept: "Electrical Engineering",
-    semester: "1st",
-    imageUrl: PlaceholderImg,
-  },
-  {
-    name: "Student 4",
-    dept: "Civil Engineering",
-    semester: "4th",
-    imageUrl: PlaceholderImg,
-  },
-  {
-    name: "Student 3",
-    dept: "Electrical Engineering",
-    semester: "1st",
-    imageUrl: PlaceholderImg,
-    tech: true,
-  },
-  {
-    name: "Student 4",
-    dept: "Civil Engineering",
-    semester: "4th",
-    imageUrl: PlaceholderImg,
-    tech: true,
-  },
+  }
 ];
+
+const techTeamMembers: Member[] = [
+  {
+    name: "Naslu KK",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Sabarish AV",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Sreenandan K M",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Shafah Muhammed Ummer",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Natha Azeez",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+]
 
 const CoordinationTeam: React.FC = () => {
   return (
@@ -101,11 +134,11 @@ const CoordinationTeam: React.FC = () => {
         </h2>
 
         {/* Teachers Section */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 flex flex-col items-center">
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Teachers Coordinators
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center md:w-6/12">
             {teamMembers
               .filter((member) => !member.semester)
               .map((member, index) => (
@@ -165,8 +198,7 @@ const CoordinationTeam: React.FC = () => {
             Tech Team
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {teamMembers
-              .filter((member) => member.tech)
+            {techTeamMembers
               .map((member, index) => (
                 <div
                   key={index}
