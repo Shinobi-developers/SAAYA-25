@@ -54,10 +54,10 @@ const FestTimeline = () => {
   return (
     <div ref={ref} className="py-12">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl  font-bold text-center text-gray-900 dark:text-white">
+        <h2 className="text-2xl md:text-3xl  font-bold text-center">
           Previous Editions
         </h2>
-        <p className="text-center text-gray-500 dark:text-gray-300 mt-2">
+        <p className="text-center text-gray-500 -300 mt-2">
           A journey through the artistic legacy of Saaya
         </p>
 
