@@ -4,6 +4,7 @@ import TextLogo from "../../../public/images/SAAYA TEXT.png";
 import Slider from "../../components/Slider";
 import Timeline from "../../components/Timeline";
 import Marquee from "../../components/Marquee";
+import CoordinationTeam from "../../components/AboutTeam";
 
 const About = () => {
   const navigate = useNavigate();
@@ -93,6 +94,9 @@ const About = () => {
     </div>
       <div className="flex justify-center my-0 md:my-20">
         <Timeline />
+      </div>
+      <div>
+        <CoordinationTeam />
       </div>
       {/* <h1 className="text-3xl font-bold">About the Art Fest</h1>
       <p className="mt-4 text-lg">This is our college’s annual art festival showcasing student talent in various forms of art.</p>
