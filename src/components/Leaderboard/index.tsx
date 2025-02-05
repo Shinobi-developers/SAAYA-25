@@ -1,13 +1,7 @@
 import { FaMedal } from "react-icons/fa";
-//   import { useEffect, useState } from "react";
-// import axios from "axios";
+  import { useEffect, useState } from "react";
+import axios from "axios";
 
-const departmentData = [
-  { name: "Gryffindor", branch: "CE & AD", points: 75 },
-  { name: "Slytherin", branch: "CSE" , points: 66 },
-  { name: "Hufflepuff", branch: "ECE , EEE & ME", points: 32 },
-  { name: "Ravenclaw", branch: "MCA & MTECH", points: 0 },
-];
 
 const getMedalColor = (rank: number) => {
   switch (rank) {
@@ -18,31 +12,34 @@ const getMedalColor = (rank: number) => {
   }
 };
 
+interface PointsDepartment {
+  squad: string;
+  department: string;
+  points: number;
+}
+
 const Leaderboard = () => {
-  // const [score, setScore] = useState([]);
-  // const [error, setError] = useState<string | null>(null);
+  const [scores, setScores] = useState<PointsDepartment[]>([]);
 
-  // const fetchLeaderboard = async () => {
-  //   try {
-  //     const response = await axios.get("https://saaya-25-backend.onrender.com/squad/points");
-  //     setScore(response.data);
-  //     console.log();
-  //   } catch (error) {
-  //     setError("Failed to load leaderboard");
-  //     console.error(error);
-  //   }
-  // };
-  // useEffect(() => {
+  const fetchLeaderboard = async () => {
+    try {
+      const response = await axios.get("https://saaya-25-backend.onrender.com/squad/points");
+      setScores(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  useEffect(() => {
 
-  //   fetchLeaderboard();
-  // }, []);
+    fetchLeaderboard();
+  }, []);
   return (
     <div className="w-full max-w-lg mx-auto bg-white p-10 my-10  md:flex md:flex-col md:items-center">
       <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-4">
         Saaya'25 Leaderboard
       </h2>
       <ul className="space-y-3 md:w-300 ">
-        {departmentData.map((dept, index) => (
+        {scores.map((score, index) => (
           <li
             key={index}
             className={`flex items-center justify-between p-3 rounded-lg w-full ${
@@ -55,11 +52,11 @@ const Leaderboard = () => {
               </span>
               <div className="flex flex-col">
 
-              <p className="md:text-xl text-gray-800 font-medium">{dept.name}</p>
-              <p className="md:text-xl text-gray-500 font-medium">{dept.branch}</p>
+              <p className="md:text-xl text-gray-800 font-medium">{score.squad}</p>
+              <p className="md:text-xl text-gray-500 font-medium">{score.department}</p>
               </div>
             </div>
-            <p className="md:text-xl text-gray-700 font-semibold">{dept.points} pts</p>
+            <p className="md:text-xl text-gray-700 font-semibold">{score.points} pts</p>
           </li>
         ))}
       </ul>
