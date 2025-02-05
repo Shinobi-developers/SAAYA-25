@@ -37,7 +37,7 @@ const teamMembers: Member[] = [
     imageUrl: PlaceholderImg,
   },
   {
-    name: "Vyshnav m",
+    name: "Vaishnav m",
     dept: "Computer Science",
     semester: "8th",
     imageUrl: PlaceholderImg,
