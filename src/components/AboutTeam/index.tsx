@@ -9,7 +9,7 @@ interface Member {
 }
 
 const teamMembers: Member[] = [
-  { name: "MS. APARNA KC", 
+  { name: "Ms. APARNA KC", 
     dept: "Electronics & Communication Engineering", 
     imageUrl: PlaceholderImg 
   },
@@ -19,8 +19,28 @@ const teamMembers: Member[] = [
     imageUrl: PlaceholderImg,
   },
   {
+    name: "Mr. MUHAMMED MUSTHAFA MP",
+    dept: "Mechanical Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Ms Sudheela Mol M S",
+    dept: "Applied Science", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Mr. MURALI KRISHNAN K",
+    dept: "Electrical & Electronics Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Ms. DIVYA M",
+    dept: "Computer Science & Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
     name: "Athul Raj R ",
-    dept: "Computer Science",
+    dept: "Computer Science & Engineering",
     semester: "8th",
     imageUrl: PlaceholderImg,
   },
@@ -38,7 +58,7 @@ const teamMembers: Member[] = [
   },
   {
     name: "Vaishnav m",
-    dept: "Computer Science",
+    dept: "Computer Science & Engineering",
     semester: "8th",
     imageUrl: PlaceholderImg,
   },
@@ -138,7 +158,7 @@ const CoordinationTeam: React.FC = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Teachers Coordinators
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center md:w-6/12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 gap-8 place-items-center md:w-6/12">
             {teamMembers
               .filter((member) => !member.semester)
               .map((member, index) => (
