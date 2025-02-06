@@ -39,6 +39,11 @@ const teamMembers: Member[] = [
     imageUrl: PlaceholderImg,
   },
   {
+    name: "Ms. ANILA S",
+    dept: "Civil Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
     name: "Athul Raj R ",
     dept: "Computer Science & Engineering",
     semester: "8th",
