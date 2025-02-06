@@ -8,8 +8,11 @@ const { Option } = Select;
 interface Result {
   eventName: string;
   first: { name: string; sem: string; squad: string };
+  first1: { name: string; sem: string; squad: string };
   second: { name: string; sem: string; squad: string };
+  second1: { name: string; sem: string; squad: string };
   third: { name: string; sem: string; squad: string };
+  third1: { name: string; sem: string; squad: string };
 }
 
 const ResultsPage: React.FC = () => {
@@ -120,6 +123,16 @@ const ResultsPage: React.FC = () => {
                       {result.first.sem}, {getSquad(result.first.squad)}
                     </h1>
                   </div>
+                  {result.first1 ?(
+                  <div className="flex gap-4 items-center bg-gray-100 px-5 py-3 rounded-xl w-full my-2">
+                    <FaMedal size={24} className="text-yellow-400" />
+                    <h1 className="text-lg font-medium pt-0">
+                      {result.first1.name}
+                      <br />
+                      {result.first1.sem}, {getSquad(result.first1.squad)}
+                    </h1>
+                  </div>
+                  ):""}
                   <div className="flex gap-4 items-center  bg-gray-100 px-5 py-3 rounded-xl w-full my-2">
                     <FaMedal size={24} className="text-gray-400" />
                     <h1 className="text-lg font-medium pt-0">
@@ -128,6 +141,16 @@ const ResultsPage: React.FC = () => {
                       {result.second.sem}, {getSquad(result.second.squad)}
                     </h1>
                   </div>
+                  {result.second1 ?(
+                  <div className="flex gap-4 items-center bg-gray-100 px-5 py-3 rounded-xl w-full my-2">
+                    <FaMedal size={24} className="text-gray-400" />
+                    <h1 className="text-lg font-medium pt-0">
+                      {result.second1.name}
+                      <br />
+                      {result.second1.sem}, {getSquad(result.second1.squad)}
+                    </h1>
+                  </div>
+                  ):""}
                   <div className="flex gap-4 items-center  bg-gray-100 px-5 py-3 rounded-xl w-full my-2">
                     <FaMedal size={24} className="text-amber-800" />
                     <h1 className="text-lg font-medium pt-0">
@@ -136,6 +159,16 @@ const ResultsPage: React.FC = () => {
                       {result.third.sem}, {getSquad(result.third.squad)}
                     </h1>
                   </div>
+                  {result.third1 ?(
+                  <div className="flex gap-4 items-center bg-gray-100 px-5 py-3 rounded-xl w-full my-2">
+                    <FaMedal size={24} className="text-amber-800" />
+                    <h1 className="text-lg font-medium pt-0">
+                      {result.third1.name}
+                      <br />
+                      {result.third1.sem}, {getSquad(result.third1.squad)}
+                    </h1>
+                  </div>
+                  ):""}
                 </Card>
               </Col>
             ))}
