@@ -107,7 +107,7 @@ const ResultsPage: React.FC = () => {
             {results.map((result, index) => (
               <Col key={index} xs={24} sm={12} md={8} lg={6}>
                 <Card
-                  title={<span className="text-xl md:text-2xl font-semibold text-gray-900 bg-amber-200 py-2 px-5 rounded-lg inline-block my-2">{result.eventName}</span>}
+                  title={<span className="text-lg md:text-xl font-semibold text-gray-900 bg-amber-200 py-2 px-3 rounded-lg my-2 block text-center">{result.eventName}</span>}
                   bordered={false}
                   className="shadow-lg border rounded-lg p-4 bg-gradient-to-br from-yellow-100 to-white hover:shadow-xl transition duration-300"
                 >

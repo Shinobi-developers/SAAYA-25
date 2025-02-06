@@ -9,7 +9,7 @@ interface Member {
 }
 
 const teamMembers: Member[] = [
-  { name: "MS. APARNA KC", 
+  { name: "Ms. APARNA KC", 
     dept: "Electronics & Communication Engineering", 
     imageUrl: PlaceholderImg 
   },
@@ -19,8 +19,28 @@ const teamMembers: Member[] = [
     imageUrl: PlaceholderImg,
   },
   {
+    name: "Mr. MUHAMMED MUSTHAFA MP",
+    dept: "Mechanical Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Ms Sudheela Mol M S",
+    dept: "Applied Science", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Mr. MURALI KRISHNAN K",
+    dept: "Electrical & Electronics Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Ms. DIVYA M",
+    dept: "Computer Science & Engineering", 
+    imageUrl: PlaceholderImg,
+  },
+  {
     name: "Athul Raj R ",
-    dept: "Computer Science",
+    dept: "Computer Science & Engineering",
     semester: "8th",
     imageUrl: PlaceholderImg,
   },
@@ -38,7 +58,7 @@ const teamMembers: Member[] = [
   },
   {
     name: "Vaishnav m",
-    dept: "Computer Science",
+    dept: "Computer Science & Engineering",
     semester: "8th",
     imageUrl: PlaceholderImg,
   },
@@ -94,7 +114,7 @@ const teamMembers: Member[] = [
 
 const techTeamMembers: Member[] = [
   {
-    name: "Naslu KK",
+    name: "Naslu",
     dept: "Computer Science & Engineering",
     semester: "6th",
     imageUrl: PlaceholderImg,
@@ -124,6 +144,20 @@ const techTeamMembers: Member[] = [
     imageUrl: PlaceholderImg,
   },
 ]
+const mediaTeamMembers: Member[] = [
+  {
+    name: "Yahya Sulaim",
+    dept: "Computer Science & Engineering",
+    semester: "8th",
+    imageUrl: PlaceholderImg,
+  },
+  {
+    name: "Madhav MP",
+    dept: "Computer Science & Engineering",
+    semester: "6th",
+    imageUrl: PlaceholderImg,
+  },
+]
 
 const CoordinationTeam: React.FC = () => {
   return (
@@ -138,7 +172,7 @@ const CoordinationTeam: React.FC = () => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Teachers Coordinators
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 place-items-center md:w-6/12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {teamMembers
               .filter((member) => !member.semester)
               .map((member, index) => (
@@ -199,6 +233,35 @@ const CoordinationTeam: React.FC = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {techTeamMembers
+              .map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 p-3"
+                >
+                  <img
+                    className="w-full object-cover"
+                    src={member.imageUrl}
+                    alt={member.name}
+                  />
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-600">
+                      {member.dept} - {member.semester} Semester
+                    </p>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+        {/* media team */}
+        <div className="text-center flex flex-col items-center mt-4">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            Media Team
+          </h3>
+          <div className="grid grid-cols-1 md:w-6/12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8 justify-items-center">
+            {mediaTeamMembers
               .map((member, index) => (
                 <div
                   key={index}

@@ -5,6 +5,35 @@ import Marquee from "../../components/Marquee"
 import AboutSaaya from "../../components/AboutSaaya";
 import Leaderboard from "../../components/Leaderboard/index";
 import EventSlider from "../../components/EventAccordion";
+import GuestList from "../../components/GustList";
+
+const guests = [
+  {
+    name: "Arjun Ashokan",
+    occupation: "Actor",
+    image: "../images/arju.png", 
+  },
+  {
+    name: "Mathew Thomas",
+    occupation: "Actor",
+    image: "../images/mathew.png",
+  },
+  {
+    name: "Sangeeth Prathap",
+    occupation: "Actor and film editor",
+    image: "../images/sangee.png", 
+  },
+  {
+    name: "Shyam Mohan",
+    occupation: "Actor",
+    image: "../images/shyam.png",
+  },
+  {
+    name: "Mahima Nambiar",
+    occupation: "Actress",
+    image: "../images/mahima.png",
+  },
+];
 
 const Home = () => {
   return (
@@ -30,6 +59,9 @@ const Home = () => {
     </div>
     <div className="w-full">
       <EventSlider />
+    </div>
+    <div>
+      <GuestList guests={guests}  />
     </div>
     </div>
   );
